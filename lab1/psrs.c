@@ -28,7 +28,7 @@ void merge(int * des,int *arr1,int n1,int *arr2,int n2)
     // if des is NULL, arr1 will be des
     int *copy=arr1;
     if(des==NULL){
-        copy=(int*)malloc(n1*sizeof(int));
+        copy=(int*)malloc((n1+n2)*sizeof(int));
         for(int i=0;i<n1;++i) copy[i]=arr1[i];
     }
 
